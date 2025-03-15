@@ -2,13 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![OpenAI](https://img.shields.io/badge/LLM-OpenAI-74aa9c?logo=openai)](https://openai.com)
 [![LangGraph](https://img.shields.io/badge/Framework-LangGraph-green)](https://github.com/langchain-ai/langgraph)
 [![E2B](https://img.shields.io/badge/Sandbox-E2B-orange)](https://e2b.dev)
-[![GitHub issues](https://img.shields.io/github/issues/naoufal51/ReasonPy)](https://github.com/naoufal51/ReasonPy/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/naoufal51/ReasonPy/pulls)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/naoufal51/ReasonPy/graphs/commit-activity)
-[![GitHub stars](https://img.shields.io/github/stars/naoufal51/ReasonPy?style=social)](https://github.com/naoufal51/ReasonPy/stargazers)
 
 ReasonPy is an AI-powered Python execution environment that combines the reasoning capabilities of large language models with a Python runtime. Built on LangGraph's ReAct pattern, it allows natural language interactions with a Python interpreter, enabling both code execution and web search capabilities.
 

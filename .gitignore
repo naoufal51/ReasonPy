@@ -27,6 +27,12 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
+
+# LangGraph files
+.langgraph_api/
+.langgraph_checkpoint*/
+*.pckl
 
 # IDE files
 .idea/

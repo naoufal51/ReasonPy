@@ -76,6 +76,55 @@ The agent will:
 3. Execute the code in the selected environment and return the results
 4. Save any visualizations to `./src/agent/artifacts/` (in local REPL mode)
 
+## 🖥️ Visualization & Interaction
+
+ReasonPy agents can be visualized and interacted with using the following tools:
+
+### LangGraph Studio
+
+[LangGraph Studio](https://langchain-ai.github.io/langgraph/concepts/langgraph_studio/) provides a specialized IDE for agent development that enables:
+
+- **Graph Visualization**: See your agent's workflow with visual node and edge representations
+- **Interactive Debugging**: Modify agent state and rerun nodes to test different scenarios
+- **Step-by-Step Execution**: Add interrupts to pause execution at specific nodes
+
+To use LangGraph Studio with ReasonPy:
+
+1. Start the LangGraph development server:
+```bash
+# Install the LangGraph CLI
+pip install langgraph[cli]
+
+# Start the server with your agent
+langgraph dev --module src.agent.graph
+# Or for E2B-based agent
+langgraph dev --module src.agent.e2b_graph
+```
+
+2. Access LangGraph Studio in your browser at:
+```
+https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+```
+
+### Agent Chat UI
+
+For a chat-focused interface, [Agent Chat UI](https://github.com/langchain-ai/agent-chat-ui) provides a simple web interface to interact with your ReasonPy agent:
+
+1. Clone and set up Agent Chat UI:
+```bash
+git clone https://github.com/langchain-ai/agent-chat-ui.git
+cd agent-chat-ui
+pnpm install  # or npm install
+pnpm dev      # or npm run dev
+```
+
+2. In the web interface, connect to your local LangGraph server:
+   - Deployment URL: `http://localhost:2024` (your LangGraph server)
+   - Assistant/Graph ID: `graph` (or `e2b_graph` for E2B version)
+   - LangSmith API Key: Only required for deployed LangGraph servers
+
+Alternatively, use the hosted version at [agentchat.vercel.app](https://agentchat.vercel.app) and connect it to your local development server.
+
 ## 🔄 Choosing the Right Environment
 
 - **Local REPL (graph.py)**: Best for simple code execution and matplotlib visualizations
